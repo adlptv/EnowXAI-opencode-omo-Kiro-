@@ -238,7 +238,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "options": {
         "baseURL": "http://127.0.0.1:20128/v1",
-        "apiKey": "sk-00922a2db0ac4d29-khauvy-0e00886f"
+        "apiKey": "API 9 ROUTER DISINU"
       },
       "models": {
         "ag/gemini-3.1-pro-high": {
