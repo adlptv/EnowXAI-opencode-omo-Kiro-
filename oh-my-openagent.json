@@ -1,0 +1,91 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "model_fallback": true,
+  "agents": {
+    "build": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5",
+      "fallback_models": [
+        "enowxlabs/kiro/qwen3-coder-next",
+        "enowxlabs/kiro/deepseek-3.2",
+        "enowxlabs/kiro/auto"
+      ],
+      "ultrawork": {
+        "model": "enowxlabs/kiro/claude-sonnet-4.5-thinking"
+      }
+    },
+    "plan": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5-thinking",
+      "fallback_models": [
+        "enowxlabs/kiro/claude-sonnet-4.5",
+        "enowxlabs/kiro/deepseek-3.2-thinking",
+        "enowxlabs/kiro/auto"
+      ]
+    },
+    "sisyphus": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5",
+      "fallback_models": [
+        "enowxlabs/kiro/claude-sonnet-4.5-thinking",
+        "enowxlabs/kiro/qwen3-coder-next",
+        "enowxlabs/kiro/auto"
+      ]
+    },
+    "hephaestus": {
+      "model": "enowxlabs/kiro/qwen3-coder-next",
+      "fallback_models": [
+        "enowxlabs/kiro/claude-sonnet-4.5",
+        "enowxlabs/kiro/deepseek-3.2",
+        "enowxlabs/kiro/auto"
+      ]
+    },
+    "explore": {
+      "model": "enowxlabs/kiro/claude-haiku-4.5",
+      "fallback_models": [
+        "enowxlabs/kiro/claude-sonnet-4.5",
+        "enowxlabs/kiro/auto"
+      ]
+    },
+    "oracle": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5-thinking",
+      "fallback_models": [
+        "enowxlabs/kiro/deepseek-3.2-thinking",
+        "enowxlabs/kiro/claude-sonnet-4.5",
+        "enowxlabs/kiro/auto"
+      ]
+    },
+    "librarian": {
+      "model": "enowxlabs/kiro/claude-haiku-4.5",
+      "fallback_models": [
+        "enowxlabs/kiro/claude-sonnet-4.5",
+        "enowxlabs/kiro/auto"
+      ]
+    },
+    "general": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5",
+      "fallback_models": [
+        "enowxlabs/kiro/deepseek-3.2",
+        "enowxlabs/kiro/qwen3-coder-next",
+        "enowxlabs/kiro/auto"
+      ]
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5"
+    },
+    "ultrabrain": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5-thinking"
+    },
+    "deep": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5-thinking"
+    },
+    "quick": {
+      "model": "enowxlabs/kiro/claude-haiku-4.5"
+    },
+    "artistry": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5"
+    },
+    "writing": {
+      "model": "enowxlabs/kiro/claude-sonnet-4.5"
+    }
+  }
+}

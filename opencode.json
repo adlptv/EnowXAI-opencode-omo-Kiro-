@@ -1,0 +1,273 @@
+{
+  "plugin": [
+    "oh-my-openagent@latest"
+  ],
+  "$schema": "https://opencode.ai/config.json",
+  "disabled_providers": [],
+  "mcp": {
+    "stitch": {
+      "type": "remote",
+      "url": "https://stitch.googleapis.com/mcp",
+      "timeout": 600000,
+      "headers": {
+        "X-Goog-Api-Key": "api-google-stitch"
+      }
+    }
+  },
+  "provider": {
+    "enowxlabs": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "enowX Labs",
+      "options": {
+        "baseURL": "http://localhost:1430/v1",
+        "apiKey": "MASUKIN API ENOWXAI DISINI"
+      },
+      "models": {
+        "kiro/auto": {
+          "name": "kiro/auto (enowX Labs)",
+          "limit": {
+            "context": 1000000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image", "audio", "video", "pdf"],
+            "output": ["text"]
+          }
+        },
+        "kiro/claude-sonnet-4.5": {
+          "name": "kiro/claude-sonnet-4.5 (enowX Labs)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image", "audio", "video", "pdf"],
+            "output": ["text"]
+          }
+        },
+        "kiro/claude-sonnet-4.5-thinking": {
+          "name": "kiro/claude-sonnet-4.5-thinking (enowX Labs)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "kiro/claude-sonnet-4": {
+          "name": "kiro/claude-sonnet-4 (enowX Labs)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "kiro/claude-haiku-4.5": {
+          "name": "kiro/claude-haiku-4.5 (enowX Labs)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "kiro/deepseek-3.2": {
+          "name": "kiro/deepseek-3.2 (enowX Labs)",
+          "limit": {
+            "context": 164000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text"],
+            "output": ["text"]
+          }
+        },
+        "kiro/deepseek-3.2-thinking": {
+          "name": "kiro/deepseek-3.2-thinking (enowX Labs)",
+          "limit": {
+            "context": 164000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text"],
+            "output": ["text"]
+          }
+        },
+        "kiro/qwen3-coder-next": {
+          "name": "kiro/qwen3-coder-next (enowX Labs)",
+          "limit": {
+            "context": 256000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text"],
+            "output": ["text"]
+          }
+        },
+        "kiro/glm-5": {
+          "name": "kiro/glm-5 (enowX Labs)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "kiro/minimax-m2.5": {
+          "name": "kiro/minimax-m2.5 (enowX Labs)",
+          "limit": {
+            "context": 196000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "codebuddy/claude-opus-4.6": {
+          "name": "codebuddy/claude-opus-4.6 (enowX Labs)",
+          "limit": {
+            "context": 1000000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image", "audio", "video", "pdf"],
+            "output": ["text", "pdf"]
+          }
+        },
+        "codebuddy/gpt-5.5": {
+          "name": "codebuddy/gpt-5.5 (enowX Labs)",
+          "limit": {
+            "context": 400000,
+            "output": 128000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "codebuddy/gpt-5.4": {
+          "name": "codebuddy/gpt-5.4 (enowX Labs)",
+          "limit": {
+            "context": 400000,
+            "output": 128000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "codebuddy/gpt-5.3-codex": {
+          "name": "codebuddy/gpt-5.3-codex (enowX Labs)",
+          "limit": {
+            "context": 400000,
+            "output": 128000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "codebuddy/gpt-5.2": {
+          "name": "codebuddy/gpt-5.2 (enowX Labs)",
+          "limit": {
+            "context": 400000,
+            "output": 128000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "codebuddy/gemini-3.1-pro": {
+          "name": "codebuddy/gemini-3.1-pro (enowX Labs)",
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          },
+          "modalities": {
+            "input": ["text", "image", "video", "pdf"],
+            "output": ["text"]
+          }
+        },
+        "codebuddy/gemini-2.5-pro": {
+          "name": "codebuddy/gemini-2.5-pro (enowX Labs)",
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          },
+          "modalities": {
+            "input": ["text", "image", "video", "pdf"],
+            "output": ["text"]
+          }
+        },
+        "codebuddy/kimi-k2.5": {
+          "name": "codebuddy/kimi-k2.5 (enowX Labs)",
+          "limit": {
+            "context": 250000,
+            "output": 65536
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "codebuddy/default-model": {
+          "name": "codebuddy/default-model (enowX Labs)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        }
+      }
+    },
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "sk-00922a2db0ac4d29-khauvy-0e00886f"
+      },
+      "models": {
+        "ag/gemini-3.1-pro-high": {
+          "name": "ag/gemini-3.1-pro-high"
+        },
+        "ag/gemini-3.1-pro-low": {
+          "name": "ag/gemini-3.1-pro-low"
+        },
+        "ag/gemini-3-flash": {
+          "name": "ag/gemini-3-flash"
+        },
+        "ag/claude-sonnet-4-6": {
+          "name": "ag/claude-sonnet-4-6"
+        },
+        "ag/claude-opus-4-6-thinking": {
+          "name": "ag/claude-opus-4-6-thinking"
+        },
+        "ag/gpt-oss-120b-medium": {
+          "name": "ag/gpt-oss-120b-medium"
+        }
+      }
+    }
+  },
+  "model": "enowxlabs/kiro/claude-sonnet-4.5",
+  "agent": {
+    "explorer": {
+      "description": "Fast explorer subagent for codebase exploration",
+      "mode": "subagent",
+      "model": "enowxlabs/kiro/claude-haiku-4.5"
+    }
+  }
+}
